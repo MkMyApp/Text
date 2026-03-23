@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Text</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+
+<!-- PWA・モバイル表示のための追加要素 -->
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+<h1>Text</h1> 
+<p id="status">
+  <span id="filename">File: (none)</span>
+  <span id="modified"></span>
+  <span id="linecount">Line: 1</span>
+  <span id="charcount">Chars: 0</span>
+</p>
+<button onclick="loadFile()">Load</button>
+<button onclick="saveFile()">Save</button>
+<br>
+<textarea id="text"></textarea>
+<script src="file.js"></script>
+
+<!--　PWAのための追加要素 -->
+<script src="sw-register.js"></script>
+
+</body>
+</html>
